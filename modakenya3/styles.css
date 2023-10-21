@@ -1,0 +1,536 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: auto;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4aa1be;
+  padding: 10px;
+  color: white;
+}
+.navbar-categories {
+  text-align: center;
+  background-color: #0d93c0;
+  padding: 5px;
+  color: white;
+}
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li:first-child {
+  margin-left: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e65e26;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.user-actions a {
+  margin-left: 5px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.user-actions a:hover {
+  color: white;
+}
+
+.user-actions a img {
+  display: block;
+  width: 12px;
+  height: 12px;
+}
+
+/* Optional: Center the buttons vertically */
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+/* Hero Section Styles */
+.hero {
+  position: relative;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: slide 2s infinite alternate;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #e65e26;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #d44b1b;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-links a {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 0 10px;
+  background-color: #2C99BC;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-links a:hover {
+  background-color: #e65e26;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #2C99BC;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Changed to column for proper stacking */
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  text-align: center;
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    .payment-images {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .payment-images img {
+        max-width: 100px; /* You can adjust the width as needed */
+        margin: 0 10px; /* Adjust spacing between images */
+    }
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-sublinks {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-sublinks li {
+  margin-bottom: 5px;
+}
+
+.footer-sublinks li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-sublinks li a:hover {
+  color: #e65e26;
+}
+
+.footer-row-centered {
+  text-align: center;
+}
+
+/* Added this style for the copyright text */
+.footer-column p {
+  margin: 0;
+  text-align: center;
+}
+
+/* Existing Styles */
+
+/* Add CSS adjustments for the image grid in each section */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional adjustments for each section */
+.flash-sale {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.trending-brands {
+  background-color: #f1f1f1;
+  padding: 40px;
+}
+
+.recommended-purchases {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.flash-sale h2,
+.trending-brands h2,
+.recommended-purchases h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Adjustments for the whole page */
+body {
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for the image grid */
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Existing Styles */
+
+/* Featured Products Section Styles */
+.featured-products {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.featured-products h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.product-card span {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-card a {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #2C99BC;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.product-card a:hover {
+  background-color: #e65e26;
+}
+
+/* Responsive adjustments for the product grid */
+@media screen and (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #e65e26;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #d44b1b;
+  color: white;
+}
+/* Card Styles */
+.custom-modal {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  padding: 50px;
+  margin: 50px auto;
+}
+
+.custom-modal-content {
+  text-align: center;
+}
+
+.custom-modal-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.custom-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #e65e26;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #d44b1b;
+}
+
+/* Optional: Center the form elements vertically */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.forgot-password-link {
+  color: #4aa1be;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 10px; /* Adjust the margin-top value as per your preference */
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-link-text {
+  color: #4aa1be;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Existing styles for image grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.image-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Additional styles for image details */
+.image-details {
+  margin-top: 15px;
+}
+
+.real-price {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.discount {
+  color: #e65e26;
+  font-weight: bold;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #2C99BC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #e65e26;
+}
+  .discount-wrapper {
+    display: ;
+    position: relative;
+    background-color: #FFD700;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .discount-text {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #FF4500;
+    font-weight: bold;
+  }
+
+  .close-button:hover {
+    background-color: #FF6347;
+  }
